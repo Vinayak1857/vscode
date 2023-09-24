@@ -1,0 +1,26 @@
+import java.util.*;
+class Str
+{
+    public void display()
+    {
+        Scanner in=new Scanner(System.in);
+        String str;int len,i;
+        System.out.println("Enter any Sentence");
+        str=in.nextLine();
+        len=str.length();
+        char ch=' ';
+        char ch1=' ';
+        ch=str.charAt(0);
+        System.out.print(ch.toUpperCase());
+              
+        for(i=1;i<=len;i++)
+        {
+            ch=str.charAt(i);
+            if(ch==' ')
+            {
+                ch1=str.charAt(i+1);
+                System.out.print(ch1.toUppercase());
+            }
+        }
+    }
+}
